@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userProfile_header"
+    android:layout_width="fill_parent"
+    android:layout_height="100.0dip"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:text="Change"
+        android:textColor="#ffffffff" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/user_profile"
+        android:tint="#ffffffff" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageView">
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Rajkumar kumawat"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/user_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="\ 9461769676"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_number" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:maxLength="20"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="Search"
+        android:textColor="@android:color/white" />
+
+    <TableRow
+        android:id="@+id/searchtablerow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.25"
+            android:text="REQ. ID"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.35"
+            android:gravity="left"
+            android:text="CUST NO."
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            android:text="AMT"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.45"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:text="STATUS"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <ExpandableListView
+        android:id="@+id/listviewnew"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.0dip"
+        android:groupIndicator="@android:color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

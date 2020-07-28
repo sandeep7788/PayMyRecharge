@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/distributer_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="Plan"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="Select Plan"
+            android:textColor="@color/colorPrimary" />
+
+        <Spinner
+            android:id="@+id/sp_plan"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <ExpandableListView
+            android:id="@+id/listFundReceive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:childDivider="@color/colorPrimary"
+            android:divider="#ffffffff"
+            android:drawSelectorOnTop="false"
+            android:groupIndicator="@android:color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@id/home"
+            android:checked="false"
+            android:icon="@drawable/home1"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/bank_details"
+            android:checked="false"
+            android:icon="@drawable/bank_details"
+            android:title="Bank Details" />
+
+        <item
+            android:id="@+id/create_retailer"
+            android:checked="false"
+            android:icon="@drawable/create_retailer"
+            android:title="@string/create_new_retailer" />
+        <item
+            android:id="@+id/retailer_list"
+            android:checked="false"
+            android:icon="@drawable/fund_transfer_report"
+            android:title="Member List" />
+        <item
+            android:id="@+id/fund_request"
+            android:checked="false"
+            android:icon="@drawable/fund_receive"
+            android:title="Fund Request" />
+        <item
+            android:id="@+id/dispute_history_dealer"
+            android:checked="false"
+            android:icon="@drawable/fund_transfer_report"
+            android:title="Dispute Report" />
+        <item
+            android:id="@+id/fund_transfer_report"
+            android:checked="false"
+            android:icon="@drawable/fund_transfer_report"
+            android:title="@string/fund_trans_report" />
+        <item
+            android:id="@+id/fund_request_report_dealer"
+            android:checked="false"
+            android:icon="@drawable/ic_fund_trans_report"
+            android:title="Fund Request Report" />
+        <item
+            android:id="@+id/income"
+            android:checked="false"
+            android:icon="@drawable/total_income"
+            android:title="Income" />
+        <item
+            android:id="@+id/change_pass"
+            android:checked="false"
+            android:icon="@drawable/ic_change_pass"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

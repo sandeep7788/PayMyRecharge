@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:id="@id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@id/r_prepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_weight="1.0"
+                android:checked="true"
+                android:text="Prepaid" />
+
+            <RadioButton
+                android:id="@id/r_postpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Postpaid" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <EditText
+                android:id="@id/edtMobile"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:drawableLeft="@drawable/postpaid"
+                android:drawablePadding="5.0dip"
+                android:hint="@string/mobile_number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="#ff626262" />
+
+            <ImageView
+                android:id="@id/ivPhoneBook"
+                android:layout_width="0.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_phonebook" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/operator" />
+
+        <EditText
+            android:id="@id/operator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5.0dip"
+            android:enabled="false"
+            android:inputType="number"
+            android:paddingLeft="40.0dip"
+            android:text="Operator"
+            android:textColor="#ff626262" />
+
+        <RadioGroup
+            android:id="@id/rgOperatorCodes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1.0">
+
+            <RadioButton
+                android:id="@id/rbOperatorOne"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="BT" />
+
+            <RadioButton
+                android:id="@id/rbOperatorTwo"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="BT" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@id/edtAmount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/rs"
+            android:drawablePadding="10.0dip"
+            android:hint="@string/amount"
+            android:inputType="number"
+            android:textColor="#ff626262" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_style"
+                android:text="BACK"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnRecharge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5.0dip"
+                android:layout_toLeftOf="@id/btn_back"
+                android:background="@drawable/button_style"
+                android:text="Recharge"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

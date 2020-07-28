@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffe0e0e0"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:src="@drawable/join_us" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/name_profile" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameWraper_join"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColorHint="@color/colorPrimary"
+                android:theme="@style/Theme.App.Base2">
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17.0sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/mobile_join" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/mobileWraper_join"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColorHint="@color/colorPrimary"
+                android:theme="@style/Theme.App.Base2">
+
+                <EditText
+                    android:id="@+id/edt_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="#ffffffff"
+                    android:textSize="17.0sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/email_join" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailWraper_join"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColorHint="@color/colorPrimary"
+                android:theme="@style/Theme.App.Base2">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17.0sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Role" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <RadioButton
+                android:id="@+id/rb_distributer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Distributership" />
+
+            <RadioButton
+                android:id="@+id/rb_retailer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Retailership" />
+
+            <RadioButton
+                android:id="@+id/rb_api"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="API" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:text="State" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/state_join" />
+
+            <Spinner
+                android:id="@+id/sp_state"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:text="City" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/city_join" />
+
+            <Spinner
+                android:id="@+id/sp_district"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/address" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addressWraper_join"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColorHint="@color/colorPrimary"
+                android:theme="@style/Theme.App.Base2">
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17.0sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:layout_width="0.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/pin_imps" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pinWraper_join"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textColorHint="@color/colorPrimary"
+                android:theme="@style/Theme.App.Base2">
+
+                <EditText
+                    android:id="@+id/edt_pin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17.0sp" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_style"
+            android:text="Request to join us"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@id/home"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/rc_history"
+            android:checked="false"
+            android:icon="@drawable/history"
+            android:title="rc History" />
+        <item
+            android:id="@+id/income"
+            android:checked="false"
+            android:icon="@drawable/total_income"
+            android:title="Income" />
+        <item
+            android:id="@+id/dispute_history"
+            android:checked="false"
+            android:icon="@drawable/fund_transfer_report"
+            android:title="Dispute Report" />
+        <item
+            android:id="@+id/bankDetails"
+            android:checked="false"
+            android:icon="@drawable/bank_details"
+            android:title="@string/bankDetails" />
+        <item
+            android:id="@+id/fund_request_report"
+            android:checked="false"
+            android:icon="@drawable/ic_fund_trans_report"
+            android:title="Fund Request Report" />
+        <item
+            android:id="@+id/change_pass"
+            android:checked="false"
+            android:icon="@drawable/ic_change_pass"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

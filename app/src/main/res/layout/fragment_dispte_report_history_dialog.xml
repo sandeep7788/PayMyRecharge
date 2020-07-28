@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dth2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingLeft="5.0dip"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="0.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="0.1"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/txt_trans"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:paddingLeft="10.0dip"
+                android:text="Transcation Id :"
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+
+            <TextView
+                android:id="@+id/select_circle"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/edt_repley"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:background="@drawable/prepaid_edittext_border"
+                android:hint="Repley message"
+                android:padding="10.0dip"
+                android:singleLine="false"
+                android:textColorHint="#ff37474f"
+                android:textSize="15.0dip" />
+
+            <Button
+                android:id="@+id/btn_repley"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_repley"
+                android:layout_centerHorizontal="true"
+                android:text="REPLEY" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_dispute_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ll2"
+            android:layout_below="@id/ll1"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" />
+    </RelativeLayout>
+</FrameLayout>

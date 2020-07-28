@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/status" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="3.0dip"
+            android:text="Status :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status_rechargestatus"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:padding="3.0dip"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/reqid_status" />
+
+        <TextView
+            android:id="@id/textView3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="3.0dip"
+            android:text="TransID:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edt_requestId_rechargestatus"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:padding="3.0dip"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/mobile_status" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="3.0dip"
+            android:text="Mobile no :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile_number_rechargestatus"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:padding="3.0dip"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/amount_status" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="3.0dip"
+            android:text="Amount :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount_rechargestatus"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:padding="3.0dip"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:layout_width="0.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/operator_status" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:padding="3.0dip"
+            android:text="Operator :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/operator_rechargestatus"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.6"
+            android:padding="3.0dip"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_style"
+        android:padding="5dp"
+        android:text="OK"
+        android:textColor="#ffffffff" />
+</LinearLayout>

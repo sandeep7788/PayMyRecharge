@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/otp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/otpWraper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:textColorHint="@color/colorPrimary"
+            android:theme="@style/Theme.App.Base">
+
+            <EditText
+                android:id="@+id/edt_otp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_style"
+        android:text="Submit"
+        android:textColor="#ffffffff" />
+</LinearLayout>

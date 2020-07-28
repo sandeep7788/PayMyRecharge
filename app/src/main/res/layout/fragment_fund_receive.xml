@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spDays"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.25"
+            android:text="FROM"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:text="REMAN AMT"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:paddingLeft="8.0dip"
+            android:text="AMT"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1.0dip"
+            android:layout_marginBottom="1.0dip"
+            android:layout_weight="0.4"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:text="CURRENT AMT"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <tr.xip.errorview.ErrorView
+        android:id="@+id/historyerror_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff5f5f5"
+        android:visibility="gone"
+        app:ev_retryButtonText=""
+        app:ev_subtitle="NO HISTORY!!" />
+
+    <ExpandableListView
+        android:id="@+id/listFundReceive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:childDivider="#ffffffff"
+        android:divider="#ffffffff"
+        android:dividerHeight="1.0dip"
+        android:groupIndicator="@android:color/transparent"
+        android:padding="5dp"
+        android:scrollbars="none" />
+</LinearLayout>

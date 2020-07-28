@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff9fa8da">
+
+        <TextView
+            android:id="@+id/req"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.25"
+            android:text=""
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/custno"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="0.35"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1.0dip"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:layout_weight="0.45"
+            android:gravity="left"
+            android:paddingLeft="10.0dip"
+            android:text=""
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:id="@+id/ivDispute"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_dispute"
+            android:visibility="gone" />
+    </TableRow>
+</TableLayout>

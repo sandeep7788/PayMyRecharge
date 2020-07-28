@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff263238"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/select_circle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.9"
+            android:text="Select Operator"
+            android:textColor="#ffffffff"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/op_change_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe0e0e0"
+        android:padding="15.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/select_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Airtel"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/change_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Change"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview134"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffffff"
+        android:paddingRight="-5.0dip" />
+</LinearLayout>

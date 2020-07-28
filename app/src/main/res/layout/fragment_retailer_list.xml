@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/distributer_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="Remain Bal"
+                android:textColor="@android:color/white"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Member Name"
+                android:textColor="@android:color/white"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="1.0dip"
+                android:layout_marginBottom="1.0dip"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:paddingRight="5.0dip"
+                android:text="Mobile"
+                android:textColor="@android:color/white"
+                android:textSize="12.0sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ExpandableListView
+            android:id="@id/listFundReceive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:childDivider="#ffffffff"
+            android:divider="#ffffffff"
+            android:dividerHeight="1.0dip"
+            android:groupIndicator="@android:color/transparent"
+            android:padding="5dp"
+            android:scrollbars="none" />
+    </LinearLayout>
+</FrameLayout>

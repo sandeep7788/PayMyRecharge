@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="?colorPrimaryDark"
+                android:minHeight="?actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="100.0dip"
+                            android:layout_height="50.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/applogo" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/tvvNews"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/t"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@+id/txt_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_gravity="bottom"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="News"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@+id/tvBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="Balance"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        android:id="@+id/img_wallet"
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/tvBalance"
+                        android:src="@drawable/wallet_new" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:visibility="visible"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#ff000000"
+                app:tabTextColor="#ff000000" />
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/tvvNews"
+                android:layout_below="@id/tabs1"
+                android:background="#ffffffff" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/tvvNews"
+                android:layout_below="@id/tabs1"
+                android:layout_marginTop="25dp"/>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

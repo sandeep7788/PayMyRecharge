@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/select_circle"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.9"
+            android:text="Support"
+            android:textColor="#ffffffff"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mail_gif" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:autoLink="email"
+        android:text="paymyrecharge@gmail.com"
+        android:textColor="#ff000000"
+        android:textColorLink="#ff000000"
+        android:textSize="17.0sp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100.0dip"
+        android:src="@drawable/phone_calling" />
+
+    <TextView
+        android:id="@+id/txt_mobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:autoLink="phone"
+        android:text="+91-7619733888"
+        android:textColor="#ff000000"
+        android:textColorLink="#ff000000"
+        android:textSize="17.0sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50.0dip"
+        android:background="@color/colorPrimaryDark"
+        android:padding="50.0dip"
+        android:src="@drawable/applogo" />
+</LinearLayout>

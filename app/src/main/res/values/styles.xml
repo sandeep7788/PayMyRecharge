@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="@style/Base.Theme.AppCompat">
+        <item name="colorAccent">#ffffffff</item>
+    </style>
+    <style name="checkBoxStyle1" parent="@style/Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">#ff000000</item>
+    </style>
+    <style name="Theme.App.Base1" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ffffffff</item>
+        <item name="colorControlHighlight">#ffffffff</item>
+    </style>
+    <style name="Theme.App.Base2" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ff673ab7</item>
+        <item name="colorControlHighlight">#ffffffff</item>
+    </style>
+    <style name="Theme.App.Base4" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20.0sp</item>
+        <item name="colorControlNormal">#ffc5c5c5</item>
+        <item name="colorControlActivated">#ff000000</item>
+        <item name="colorControlHighlight">#ff000000</item>
+    </style>
+
+    <style name="NavigationTextSize">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="DialogFragmentTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

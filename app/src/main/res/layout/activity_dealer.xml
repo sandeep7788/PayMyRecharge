@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@id/content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="?colorPrimaryDark"
+                android:minHeight="?actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="31dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:padding="4dp"
+                            android:src="@drawable/wallet1"
+                            android:tint="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.29"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:src="@drawable/wallet"
+                            android:text="Amounts"
+                            android:tint="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/img1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/ivSearch"
+                            android:layout_width="25.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10.0dip"
+                            android:src="@drawable/search"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/t_admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="45dp"
+                            android:layout_marginRight="45dp"
+                            android:text="Admin"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView5"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:src="@drawable/user"
+                            android:tint="@android:color/white"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/t_admin"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </android.support.constraint.ConstraintLayout>
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.design.widget.TabLayout
+                android:id="@id/tabs1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+            <RelativeLayout
+                android:id="@id/tvvNews"
+                android:layout_width="fill_parent"
+                android:layout_height="80.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@id/t"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <TextView
+                        android:id="@id/txt_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_gravity="bottom"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="News"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@id/tvBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginRight="20dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="Balance"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0sp" />
+
+                    <ImageView
+                        android:id="@id/img_wallet"
+                        android:layout_width="25.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/tvBalance"
+                        android:src="@drawable/wallet_new" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvNews"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:layout_above="@id/t"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@id/frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/tvvNews"
+                android:layout_below="@id/tabs1"
+                android:background="#ffffffff">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="45dp" />
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/t_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    android:layout_gravity="bottom"
+                    app:tabIndicatorGravity="bottom"
+                    android:foregroundGravity="bottom"
+                    android:scrollbarSize="0dp"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingTop="9dp"
+                    app:tabPaddingStart="15dp"
+                    android:paddingEnd="25dp"
+                    android:paddingRight="25dp"
+                    android:scrollbarStyle="outsideOverlay"/>
+
+            </FrameLayout>
+
+<!--
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                &lt;!&ndash;
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/viewpager1"
+                    android:background="?attr/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:tabBackground="#000000"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/colorAccent"
+                    app:tabTextColor="#FFF" />
+&ndash;&gt;
+
+            </android.support.constraint.ConstraintLayout>
+-->
+
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigation_view"
+            android:layout_width="230.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+            android:background="#fffff3e0"
+            app:headerLayout="@layout/navigation_header"
+            app:itemIconTint="@color/colorPrimaryDark"
+            app:itemTextColor="#ff000000"
+            app:menu="@menu/dealer_drawer"
+            app:theme="@style/NavigationTextSize" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
